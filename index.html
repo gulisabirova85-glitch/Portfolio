@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayozbek Taxirov Farxodovich — Signature Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#090A0D',
+                        surface: '#111318',
+                        primaryText: '#F5F5F2',
+                        secondaryText: '#92949D',
+                        accent: '#FF623E',
+                    },
+                    borderColor: {
+                        subtle: 'rgba(255,255,255,0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #090A0D;
+            color: #F5F5F2;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-primaryText selection:bg-accent selection:text-white">
+
+    <!-- NAVIGATSIYA -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/85 backdrop-blur-md border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="#" class="font-black tracking-widest text-xl">NEXORA <span class="text-accent">/</span> 01</a>
+            <nav class="hidden md:flex items-center space-x-10 text-sm tracking-wide text-secondaryText">
+                <a href="#about" class="hover:text-primaryText transition">01. Men haqimda</a>
+                <a href="#tech" class="hover:text-primaryText transition">02. Texnologiyalar</a>
+                <a href="#work" class="hover:text-primaryText transition">03. Portfolio</a>
+                <a href="#approach" class="hover:text-primaryText transition">04. Yondashuv</a>
+                <a href="#contact" class="hover:text-primaryText transition">05. Aloqa</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center text-xs tracking-widest uppercase bg-accent text-white px-6 py-3 rounded-full font-semibold hover:bg-accent/90 transition">
+                Bog'lanish
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-40 pb-24 px-6 flex flex-col justify-between max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center my-auto">
+            <div class="lg:col-span-7 space-y-10">
+                <div class="inline-flex items-center space-x-3 text-xs font-mono tracking-widest text-secondaryText border border-subtle px-4 py-2 rounded-full">
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                    <span>MUSTAQIL DASTURCHI VA IJODKOR BUILDER</span>
+                </div>
+                <h1 class="text-6xl sm:text-8xl lg:text-9xl font-black tracking-tighter leading-none uppercase">
+                    MANTIQ <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primaryText via-secondaryText to-accent">BILAN QURAMAN.</span><br>
+                    MAQSAD <br>
+                    <span class="text-accent">BILAN DIZAYN.</span>
+                </h1>
+                <p class="text-secondaryText text-xl sm:text-2xl max-w-2xl font-light leading-relaxed">
+                    Salom, men <strong class="text-primaryText font-semibold">Fayozbek Taxirov Farxodovich</strong>. G'oyalarni eng ilg'or kod, mukammal dizayn va yuqori aniqlik orqali raqamli mahsulotlarga aylantiraman.
+                </p>
+                <div class="flex flex-wrap gap-5 pt-4">
+                    <a href="#work" class="bg-primaryText text-darkbg px-9 py-5 rounded-full font-semibold text-sm tracking-wider hover:bg-accent hover:text-white transition duration-300">
+                        ISHLARIMNI KO'RISH
+                    </a>
+                    <a href="#contact" class="border border-subtle text-primaryText px-9 py-5 rounded-full font-semibold text-sm tracking-wider hover:border-accent hover:bg-surface transition duration-300">
+                        BOG'LANISH
+                    </a>
+                </div>
+            </div>
+            
+            <!-- O'NG TOMONDAGI BOYITILGAN INTERAKTIV KARTA -->
+            <div class="lg:col-span-5 relative">
+                <div class="aspect-[4/5] rounded-3xl bg-gradient-to-br from-surface via-[#161922] to-darkbg border border-subtle p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-60 h-60 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="flex justify-between items-center z-10">
+                        <span class="text-xs font-mono tracking-widest text-accent">DEV.IDENTIFIER // V2.6</span>
+                        <span class="w-3 h-3 rounded-full bg-accent animate-ping"></span>
+                    </div>
+                    <div class="space-y-4 z-10">
+                        <div class="inline-block px-3 py-1 rounded bg-darkbg border border-subtle text-xs font-mono text-secondaryText">FAYOZBEK.STUDIO</div>
+                        <h3 class="text-4xl font-black tracking-tight text-primaryText">FAYOZBEK<br>TAXIROV</h3>
+                        <p class="text-secondaryText text-sm font-mono">C++ / Python / React & Web Architecture</p>
+                        
+                        <!-- Interaktiv Texnologiya nishonlari qo'shildi -->
+                        <div class="pt-3 flex flex-wrap gap-2">
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded bg-darkbg/80 border border-subtle text-accent">C++</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded bg-darkbg/80 border border-subtle text-primaryText">Python</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded bg-darkbg/80 border border-subtle text-secondaryText">React</span>
+                            <span class="text-[10px] font-mono px-2.5 py-1 rounded bg-darkbg/80 border border-subtle text-accent">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-subtle flex justify-between items-center text-xs font-mono text-secondaryText z-10">
+                        <span>STATUS: ACTIVE</span>
+                        <span class="text-accent font-bold">13+ RENDER PROJECTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-subtle pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-secondaryText font-mono tracking-widest">
+            <div>O'ZBEKISTON, TOSHKENT</div>
+            <div>MAHALLIY VAQT: <span id="local-time" class="text-primaryText font-bold">--:--:--</span></div>
+            <div>PASTGA SKROL QILING</div>
+        </div>
+    </section>
+
+    <!-- 01 / MEN HAQIMDA -->
+    <section id="about" class="py-40 px-6 border-t border-subtle bg-surface/20">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono text-accent tracking-widest block mb-6">01 / KIRISH VA IDENTIFIKATSIYA</span>
+            <h2 class="text-5xl sm:text-7xl font-bold tracking-tight mb-20 uppercase max-w-4xl leading-tight">
+                BEHIND EVERY LINE OF CODE, THERE IS AN IDEA AND VISION.
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-6 space-y-8 text-secondaryText text-xl leading-relaxed font-light">
+                    <p>
+                        Assalomu alaykum! Mening ismim <strong class="text-primaryText font-medium">Fayozbek Taxirov Farxodovich</strong>. Men raqamli olamda o'zining yorqin izini qoldirishni maqsad qilgan ijodiy dasturchiman.
+                    </p>
+                    <p>
+                        Dasturlash olamiga kirib kelganimdan buyon murakkab mantiqiy masalalar yechish (C++, Python) va ularni zamonaviy, foydalanuvchiga qulay veb interfeyslariga (HTML, CSS, JavaScript, React, Tailwind CSS) bog'lash ustida ishlayman.
+                    </p>
+                </div>
+                <div class="lg:col-span-6 bg-surface border border-subtle p-10 rounded-3xl space-y-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-primaryText uppercase tracking-wider">Asosiy Tamoyillarim</h3>
+                    <ul class="space-y-6 text-secondaryText text-base">
+                        <li class="flex items-start space-x-4">
+                            <span class="text-accent font-mono text-lg font-bold">01.</span>
+                            <span><strong class="text-primaryText">Chuqur mantiq:</strong> Har bir dasturiy yechim avvalo mustahkam arxitekturaga tayanishi kerak.</span>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <span class="text-accent font-mono text-lg font-bold">02.</span>
+                            <span><strong class="text-primaryText">Mukammal dizayn:</strong> Vizual estetika va foydalanish qulayligi bir-birini to'ldirishi shart.</span>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <span class="text-accent font-mono text-lg font-bold">03.</span>
+                            <span><strong class="text-primaryText">Doimiy o'sish:</strong> Yangi texnologiyalar va ilg'or yondashuvlarni tezkor o'zlashtirish.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 / TEXNOLOGIYALAR -->
+    <section id="tech" class="py-40 px-6 border-t border-subtle">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono text-accent tracking-widest block mb-6">02 / TEXNOLOGIK TO'PLAM</span>
+            <h2 class="text-5xl sm:text-7xl font-bold tracking-tight mb-20 uppercase">
+                TOOLS I USE TO BUILD IDEAS.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">01 / SYSTEM ARCHITECTURE</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">C++</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Yuqori unumdorlikdagi dasturlash, algoritmlar, mantiqiy masalalar va tizim darajasidagi yechimlar.</p>
+                </div>
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">02 / SCRIPTING & BACKEND</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">Python</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Avtomatlashtirish jarayonlari, backend mantiqi, skriptlar va ma'lumotlarni tahlil qilish.</p>
+                </div>
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">03 / WEB STRUCTURE</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">HTML5</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Semantik va toza sahifa tuzilmasi, qulay veb arxitekturasi hamda standartlarga rioya qilish.</p>
+                </div>
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">04 / VISUAL DESIGN</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">CSS3</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Ilg'or uslublash, moslashuvchan dizaynlar, animatsiyalar va zamonaviy layoutlar.</p>
+                </div>
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">05 / INTERACTIVITY</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">JavaScript</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Dinamik va interaktiv veb-ilovalar, hodisalarni boshqarish va dasturiy mantiq.</p>
+                </div>
+                <div class="bg-surface border border-subtle p-10 rounded-2xl hover:border-accent transition duration-300 group">
+                    <div class="text-accent font-mono text-sm mb-6">06 / MODERN FRAMEWORKS</div>
+                    <h3 class="text-3xl font-bold mb-3 group-hover:text-accent transition">Tailwind & React</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Komponentlarga asoslangan frontend arxitekturasi va tezkor utility uslublash.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 / PORTFOLIO (13 TA RENDER LOYIHALARI) -->
+    <section id="work" class="py-40 px-6 border-t border-subtle bg-surface/20">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono text-accent tracking-widest block mb-6">03 / TANLANGAN LOYIHALAR</span>
+            <h2 class="text-5xl sm:text-7xl font-bold tracking-tight mb-20 uppercase">
+                SELECTED DIGITAL WORKS.
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- 1. BiliMon -->
+                <a href="https://bilimon-x.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">01 / WEB APP</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">BiliMon</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Ta'lim va bilim olishga mo'ljallangan maxsus interaktiv veb-platforma.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Python / Web</span>
+                    </div>
+                </a>
+
+                <!-- 2. Ovqat Kaloriya -->
+                <a href="https://ovqat-kaloriya.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">02 / HEALTH & NUTRITION</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Ovqat Kaloriya</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Oziq-ovqat mahsulotlari kaloriyasini hisoblash va sog'lom ovqatlanishni nazorat qilish platformasi.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Calculator / UI</span>
+                    </div>
+                </a>
+
+                <!-- 3. Fast Foot -->
+                <a href="https://fast-foot.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">03 / WEB APP</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Fast Foot</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Tezkor ovqatlanish va buyurtma berish xizmati uchun mo'ljallangan interfeys.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Frontend / UI</span>
+                    </div>
+                </a>
+
+                <!-- 4. Futbool Arena -->
+                <a href="https://futbool-arena.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">04 / WEB APP</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Futbool Arena</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Futbol ishqibozlari uchun maxsus sport va o'yin platformasi.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Interactive</span>
+                    </div>
+                </a>
+
+                <!-- 5. Hayvonlar Ovozi 3D -->
+                <a href="https://hayvonlar-ovozi-3d.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">05 / 3D & AUDIO</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Hayvonlar Ovozi 3D</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">3D elementlar va tovushlar bilan boyitilgan interaktiv ta'limiy loyiha.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">3D / JavaScript</span>
+                    </div>
+                </a>
+
+                <!-- 6. Kino 01 -->
+                <a href="https://kino-01.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">06 / ENTERTAINMENT</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Kino 01</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Kinolar katalogi va onlayn ko'rish uchun mo'ljallangan veb-ilovalar.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Catalog / UI</span>
+                    </div>
+                </a>
+
+                <!-- 7. Mebel M7PI -->
+                <a href="https://mebel-m7pi.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">07 / E-COMMERCE</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Mebel M7PI</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Zamonaviy mebellar ko'rgazmasi va buyurtma berish platformasi.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Catalog</span>
+                    </div>
+                </a>
+
+                <!-- 8. Moshkichiri -->
+                <a href="https://moshkichiri.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">08 / CULINARY</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Moshkichiri</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Milliy taomlar va retseptlar taqdim etiluvchi maxsus loyiha.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Web App</span>
+                    </div>
+                </a>
+
+                <!-- 9. O'zbek Oshi -->
+                <a href="https://ozbek-oshi.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">09 / CULINARY</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">O'zbek Oshi</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">O'zbek milliy taomlari madaniyati va osh tayyorlash san'atiga bag'ishlangan sayt.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Design / UI</span>
+                    </div>
+                </a>
+
+                <!-- 10. Real Estate -->
+                <a href="https://real-estate-x-yzu6.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">10 / PROPERTY</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Real Estate Platform</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Ko'chmas mulk oldi-sotdi va ijara e'lonlari joylashtiriladigan platforma.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Real Estate</span>
+                    </div>
+                </a>
+
+                <!-- 11. Sayxun Tech -->
+                <a href="https://sayxun-tech-frc0.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">11 / TECHNOLOGY</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Sayxun Tech</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Texnologik yechimlar va raqamli xizmatlar ko'rsatuvchi studio portfoliosi.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Tech Studio</span>
+                    </div>
+                </a>
+
+                <!-- 12. Skyline React -->
+                <a href="https://skyline-x-react.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">12 / REACT APP</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Skyline React</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">React komponentlari asosida qurilgan zamonaviy va dinamik veb-ilovasi.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">React.js</span>
+                    </div>
+                </a>
+
+                <!-- 13. Teatr -->
+                <a href="https://teatr-vh6u.onrender.com" target="_blank" class="block bg-surface border border-subtle p-12 rounded-3xl space-y-6 hover:border-accent transition duration-300 shadow-xl group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accent tracking-widest">13 / CULTURE</span>
+                        <span class="text-xs font-mono text-secondaryText group-hover:text-accent transition">Ochish ↗</span>
+                    </div>
+                    <h3 class="text-3xl font-bold group-hover:text-accent transition">Teatr Portfoliosi</h3>
+                    <p class="text-secondaryText text-base leading-relaxed">Teatr repertuarlari va chiptalar band qilish uchun mo'ljallangan madaniy platforma.</p>
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono border border-subtle px-3 py-1 rounded-full text-secondaryText">Culture / UI</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 / YONDASHUV -->
+    <section id="approach" class="py-40 px-6 border-t border-subtle">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono text-accent tracking-widest block mb-6">04 / RIVOJLANISH FALSAFASI</span>
+            <h2 class="text-5xl sm:text-7xl font-bold tracking-tight mb-20 uppercase">
+                DEVELOPMENT APPROACH.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="border-t border-subtle pt-8 space-y-4">
+                    <span class="text-accent font-mono text-2xl font-bold">01</span>
+                    <h3 class="text-2xl font-bold uppercase">Aniqlik</h3>
+                    <p class="text-secondaryText text-sm leading-relaxed">Har bir kod qatori va dizayn elementida maksimal aniqlik va mukammallik.</p>
+                </div>
+                <div class="border-t border-subtle pt-8 space-y-4">
+                    <span class="text-accent font-mono text-2xl font-bold">02</span>
+                    <h3 class="text-2xl font-bold uppercase">Tezlik</h3>
+                    <p class="text-secondaryText text-sm leading-relaxed">Yuqori unumdorlik va optimallashtirilgan yuklanish vaqtlari.</p>
+                </div>
+                <div class="border-t border-subtle pt-8 space-y-4">
+                    <span class="text-accent font-mono text-2xl font-bold">03</span>
+                    <h3 class="text-2xl font-bold uppercase">Tushunarlilik</h3>
+                    <p class="text-secondaryText text-sm leading-relaxed">Foydalanuvchilar uchun sodda, qulay va tushunarli interfeys arxitekturasi.</p>
+                </div>
+                <div class="border-t border-subtle pt-8 space-y-4">
+                    <span class="text-accent font-mono text-2xl font-bold">04</span>
+                    <h3 class="text-2xl font-bold uppercase">Ijodkorlik</h3>
+                    <p class="text-secondaryText text-sm leading-relaxed">Standart qoliplardan tashqari noyob va o'ziga xos yechimlar yaratish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 / ALOQA -->
+    <section id="contact" class="py-40 px-6 border-t border-subtle bg-surface/20">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-mono text-accent tracking-widest block mb-6">05 / BOG'LANISH</span>
+            <h2 class="text-5xl sm:text-7xl font-bold tracking-tight mb-20 uppercase max-w-3xl">
+                HAVE AN IDEA? LET'S MAKE IT REAL.
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-5 space-y-8">
+                    <p class="text-secondaryText text-xl leading-relaxed">
+                        Yangi loyihalar, hamkorlik takliflari yoki shunchaki fikr almashish uchun har doim ochiqman. Menga yozing!
+                    </p>
+                    <div class="space-y-4 font-mono text-sm tracking-wider">
+                        <div class="text-secondaryText">ELEKTRON POCHTA: <span class="text-primaryText font-bold">fayozbek@example.com</span></div>
+                        <div class="text-secondaryText">TELEGRAM: <span class="text-primaryText font-bold">@fayozbek_taxirov</span></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 bg-surface border border-subtle p-10 sm:p-12 rounded-3xl shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Xabaringiz muvaffaqiyatli yuborildi, Fayozbek!');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-mono text-secondaryText mb-3">ISMINGIZ</label>
+                            <input type="text" required class="w-full bg-darkbg border border-subtle rounded-xl px-5 py-4 text-primaryText focus:border-accent outline-none transition text-base" placeholder="Ismingizni kiriting">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-secondaryText mb-3">ELEKTRON POCHTA</label>
+                            <input type="email" required class="w-full bg-darkbg border border-subtle rounded-xl px-5 py-4 text-primaryText focus:border-accent outline-none transition text-base" placeholder="Pochtangizni kiriting">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-secondaryText mb-3">XABAR</label>
+                            <textarea rows="5" required class="w-full bg-darkbg border border-subtle rounded-xl px-5 py-4 text-primaryText focus:border-accent outline-none transition text-base" placeholder="Xabaringizni yozing"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white py-5 rounded-xl font-semibold text-sm tracking-widest uppercase hover:bg-accent/90 transition shadow-lg">
+                            XABARNI YUBORISH
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 px-6 border-t border-subtle text-center text-xs text-secondaryText font-mono tracking-widest">
+        <p>&copy; 2026 Fayozbek Taxirov Farxodovich. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script>
+        // Mahalliy vaqtni avtomatik yangilash
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('uz-UZ');
+            document.getElementById('local-time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
